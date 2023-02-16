@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Markar</title>
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container py-5">
+      <h1 class="fw-bolder">Bookmarker</h1>
+      <hr>
+    </div>
+  </header>
+
+  <div class="container text-center py-5">
+    <h2 class="fw-bold mb-5">Bookmark your favorite sites</h2>
+    <div class="form-group mb-3">
+      <h3 class="mb-4">Site Name</h3>
+      <input class="form-control" type="text" id="siteName" placeholder="Book Name">
+    </div>
+    <div class="form-group mb-3">
+      <h3 class="my-4">Site URL</h3>
+      <input class="form-control" type="text" id="siteUrl" placeholder=" Website URL">
+    </div>
+    <button id="addBtn" onclick="addbook()" class="btn btn-info fs-4 my-4">Add Book</button>
+
+    <!-- Table Row //SECTION -->
+    <table class="table text-white">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Site Name</th>
+          <th scope="col">Site URL</th>
+          <th scope="col">Visit</th>
+          <th scope="col">Delete</th>
+        </tr>
+      </thead>
+      <tbody id="Box">
+
+      </tbody>
+    </table>
+  </div>
+
+
+
+
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
